@@ -1,0 +1,4 @@
+#Mon Mar 17 17:23:27 IST 2025
+base.0=/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
