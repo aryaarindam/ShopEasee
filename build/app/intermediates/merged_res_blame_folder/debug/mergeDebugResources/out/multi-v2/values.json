@@ -21,23 +21,6 @@
                     }
                 },
                 {
-                    "source": "/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,137,241,350,470,579",
-                        "endColumns": "81,103,108,119,108,77",
-                        "endOffsets": "132,236,345,465,574,652"
-                    },
-                    "to": {
-                        "startLines": "181,182,183,184,185,186",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "10945,11027,11131,11240,11360,11469",
-                        "endColumns": "81,103,108,119,108,77",
-                        "endOffsets": "11022,11126,11235,11355,11464,11542"
-                    }
-                },
-                {
                     "source": "/Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ca60be589f3017176b432e04a4295053/transformed/jetified-activity-1.8.1/res/values/values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -88,25 +71,6 @@
                         "endLines": "127,131,152,293,297",
                         "endColumns": "56,64,63,24,24",
                         "endOffsets": "6568,6745,7875,16299,16448"
-                    }
-                },
-                {
-                    "source": "/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "188,192",
-                        "startColumns": "4,4",
-                        "startOffsets": "11618,11799",
-                        "endLines": "191,194",
-                        "endColumns": "12,12",
-                        "endOffsets": "11794,11963"
                     }
                 },
                 {
@@ -199,6 +163,23 @@
                     }
                 },
                 {
+                    "source": "/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,137,241,350,470,579",
+                        "endColumns": "81,103,108,119,108,77",
+                        "endOffsets": "132,236,345,465,574,652"
+                    },
+                    "to": {
+                        "startLines": "181,182,183,184,185,186",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "10945,11027,11131,11240,11360,11469",
+                        "endColumns": "81,103,108,119,108,77",
+                        "endOffsets": "11022,11126,11235,11355,11464,11542"
+                    }
+                },
+                {
                     "source": "/Users/dipkonaroy/.gradle/caches/8.10.2/transforms/eb80b7c20f86db896fc82173afcd18d6/transformed/jetified-play-services-base-18.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,33,46",
@@ -215,6 +196,25 @@
                         "endLines": "59,60,61,62,63,64,65,66,163,164,165,166,167,168,169,170,172,173,174,175,176,177,178,179,180,349,368",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "2149,2229,2319,2409,2489,2570,2650,2730,8712,8893,9018,9125,9305,9428,9544,9647,10002,10107,10288,10413,10588,10736,10799,10861,10940,17612,18029"
+                    }
+                },
+                {
+                    "source": "/Users/dipkonaroy/flutter_projects/Shop_easee/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "188,192",
+                        "startColumns": "4,4",
+                        "startOffsets": "11618,11799",
+                        "endLines": "191,194",
+                        "endColumns": "12,12",
+                        "endOffsets": "11794,11963"
                     }
                 }
             ]

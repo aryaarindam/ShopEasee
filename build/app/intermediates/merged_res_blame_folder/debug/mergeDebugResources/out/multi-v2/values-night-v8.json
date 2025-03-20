@@ -4,7 +4,7 @@
             "outputFile": "com.example.shop_easee.app-mergeDebugResources-28:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/dipkonaroy/flutter_projects/Shop_easee/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
