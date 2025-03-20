@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     
-    // Navigate to the main screen after 15 seconds
+    // Navigate to the main screen after 5 seconds
     Timer(const Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) => GroceryList()),
@@ -26,24 +26,23 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // ✅ Full-Screen Background Image
+          // Full-Screen Background Image
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/shopease_logo.png'), // Use full background image
-                fit: BoxFit.cover, // Cover entire screen
+                image: AssetImage('assets/images/shopease_logo.png'), 
+                fit: BoxFit.cover, 
               ),
             ),
           ),
 
-          // ✅ Centered Logo Overlay
           Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Image.asset(
-                  'assets/icons/shop_easee_icon.png', // Your centered logo
-                  width: 150, // Adjust as needed
+                  'assets/icons/shop_easee_icon.png', 
+                  width: 150,
                   height: 150,
                   fit: BoxFit.contain,
                 ),
@@ -53,7 +52,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'Georgia', // Classy font style
+                    fontFamily: 'Georgia', 
                     color: Color.fromARGB(255, 188, 249, 197),
                     letterSpacing: 1.2,
                     shadows: [

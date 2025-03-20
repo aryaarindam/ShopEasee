@@ -14,7 +14,7 @@ void  main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the root of the application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,10 +28,9 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: const Color.fromARGB(255, 241, 241, 239),
 
-        // ✅ Correct Placement of iconTheme
         iconTheme: const IconThemeData(
-          color: Colors.green,  // Adjust based on branding
-          size: 28,  // Default icon size
+          color: Colors.green,  
+          size: 28, 
         ),
       ),
       home: SplashScreen(), // Show splash screen first
