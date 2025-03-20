@@ -34,133 +34,212 @@
 27-->/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/android/app/src/main/AndroidManifest.xml:42:13-50
 27-->/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/android/app/src/main/AndroidManifest.xml:42:19-48
 28        </intent>
-29    </queries>
-30
-31    <permission
-31-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/8cf478dec41eed746328fa8046755ba2/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-32        android:name="com.example.shop_easee.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-32-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/8cf478dec41eed746328fa8046755ba2/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-33        android:protectionLevel="signature" />
-33-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/8cf478dec41eed746328fa8046755ba2/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
-34
-35    <uses-permission android:name="com.example.shop_easee.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-35-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/8cf478dec41eed746328fa8046755ba2/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-35-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/8cf478dec41eed746328fa8046755ba2/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+29    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+30    <!-- <uses-sdk android:minSdkVersion="21" /> -->
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:10:5-79
+31-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:10:22-76
+32
+33    <permission
+33-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/7f46bbd13206153774356ca6103aa890/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+34        android:name="com.example.shop_easee.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/7f46bbd13206153774356ca6103aa890/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/7f46bbd13206153774356ca6103aa890/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 36
-37    <application
-38        android:name="android.app.Application"
-39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/8cf478dec41eed746328fa8046755ba2/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-40        android:debuggable="true"
-41        android:extractNativeLibs="true"
-42        android:icon="@mipmap/ic_launcher"
-43        android:label="shop_easee" >
-44        <activity
-45            android:name="com.example.shop_easee.MainActivity"
-46            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-47            android:exported="true"
-48            android:hardwareAccelerated="true"
-49            android:launchMode="singleTop"
-50            android:taskAffinity=""
-51            android:theme="@style/LaunchTheme"
-52            android:windowSoftInputMode="adjustResize" >
-53
-54            <!--
-55                 Specifies an Android theme to apply to this Activity as soon as
-56                 the Android process has started. This theme is visible to the user
-57                 while the Flutter UI initializes. After that, this theme continues
-58                 to determine the Window background behind the Flutter UI.
-59            -->
-60            <meta-data
-61                android:name="io.flutter.embedding.android.NormalTheme"
-62                android:resource="@style/NormalTheme" />
-63
-64            <intent-filter>
-65                <action android:name="android.intent.action.MAIN" />
-66
-67                <category android:name="android.intent.category.LAUNCHER" />
-68            </intent-filter>
-69        </activity>
-70        <!--
-71             Don't delete the meta-data below.
-72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-73        -->
-74        <meta-data
-75            android:name="flutterEmbedding"
-76            android:value="2" />
-77
-78        <uses-library
-78-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
-79            android:name="androidx.window.extensions"
-79-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
-80            android:required="false" />
-80-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
-81        <uses-library
-81-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
-82            android:name="androidx.window.sidecar"
-82-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
-83            android:required="false" />
-83-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5093ab42d2307deb2d7ac0b7f5718c38/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
-84
-85        <provider
-85-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/e80aa748ff6540407d8dba61c0d945fe/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-86            android:name="androidx.startup.InitializationProvider"
-86-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/e80aa748ff6540407d8dba61c0d945fe/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
-87            android:authorities="com.example.shop_easee.androidx-startup"
-87-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/e80aa748ff6540407d8dba61c0d945fe/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
-88            android:exported="false" >
-88-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/e80aa748ff6540407d8dba61c0d945fe/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
-89            <meta-data
-89-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/e80aa748ff6540407d8dba61c0d945fe/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-90                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-90-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/e80aa748ff6540407d8dba61c0d945fe/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-91                android:value="androidx.startup" />
-91-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/e80aa748ff6540407d8dba61c0d945fe/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-92            <meta-data
-92-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-93                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-93-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-94                android:value="androidx.startup" />
-94-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-95        </provider>
-96
-97        <receiver
-97-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-98            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-98-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-99            android:directBootAware="false"
-99-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-100            android:enabled="true"
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-101            android:exported="true"
-101-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-102            android:permission="android.permission.DUMP" >
-102-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-103            <intent-filter>
-103-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-104                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-105            </intent-filter>
-106            <intent-filter>
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-107                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-108            </intent-filter>
-109            <intent-filter>
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-110                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-111            </intent-filter>
-112            <intent-filter>
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-113                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/5f7dcf6815bacc3ae7f099ba801348de/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-114            </intent-filter>
-115        </receiver>
-116    </application>
-117
-118</manifest>
+37    <uses-permission android:name="com.example.shop_easee.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+37-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/7f46bbd13206153774356ca6103aa890/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/7f46bbd13206153774356ca6103aa890/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+38
+39    <application
+40        android:name="android.app.Application"
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.13.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/7f46bbd13206153774356ca6103aa890/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+42        android:debuggable="true"
+43        android:extractNativeLibs="true"
+44        android:icon="@mipmap/ic_launcher"
+45        android:label="shop_easee" >
+46        <activity
+47            android:name="com.example.shop_easee.MainActivity"
+48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+49            android:exported="true"
+50            android:hardwareAccelerated="true"
+51            android:launchMode="singleTop"
+52            android:taskAffinity=""
+53            android:theme="@style/LaunchTheme"
+54            android:windowSoftInputMode="adjustResize" >
+55
+56            <!--
+57                 Specifies an Android theme to apply to this Activity as soon as
+58                 the Android process has started. This theme is visible to the user
+59                 while the Flutter UI initializes. After that, this theme continues
+60                 to determine the Window background behind the Flutter UI.
+61            -->
+62            <meta-data
+63                android:name="io.flutter.embedding.android.NormalTheme"
+64                android:resource="@style/NormalTheme" />
+65
+66            <intent-filter>
+67                <action android:name="android.intent.action.MAIN" />
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+70            </intent-filter>
+71        </activity>
+72        <!--
+73             Don't delete the meta-data below.
+74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+75        -->
+76        <meta-data
+77            android:name="flutterEmbedding"
+78            android:value="2" />
+79
+80        <service
+80-->[:cloud_firestore] /Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/cloud_firestore/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-12:19
+81            android:name="com.google.firebase.components.ComponentDiscoveryService"
+81-->[:cloud_firestore] /Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/cloud_firestore/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:18-89
+82            android:directBootAware="true"
+82-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+83            android:exported="false" >
+83-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:16:13-37
+84            <meta-data
+84-->[:cloud_firestore] /Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/cloud_firestore/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-11:85
+85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+85-->[:cloud_firestore] /Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/cloud_firestore/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:17-134
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[:cloud_firestore] /Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/cloud_firestore/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:17-82
+87            <meta-data
+87-->[:firebase_core] /Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/firebase_core/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-11:85
+88                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+88-->[:firebase_core] /Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/firebase_core/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:17-124
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[:firebase_core] /Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/firebase_core/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:17-82
+90            <meta-data
+90-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:17:13-19:85
+91                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+91-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:18:17-122
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:19:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:20:13-22:85
+94                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+94-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:21:17-111
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-firestore:25.1.2] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/f191b7b60e9590978b5ec0d8a04ee19c/transformed/jetified-firebase-firestore-25.1.2/AndroidManifest.xml:22:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/bcc8d2985ec1ab09d1e21c43fe50ab02/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+97                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+97-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/bcc8d2985ec1ab09d1e21c43fe50ab02/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/bcc8d2985ec1ab09d1e21c43fe50ab02/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+100                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+100-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+102        </service>
+103
+104        <provider
+104-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+105            android:name="com.google.firebase.provider.FirebaseInitProvider"
+105-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+106            android:authorities="com.example.shop_easee.firebaseinitprovider"
+106-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+107            android:directBootAware="true"
+107-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+108            android:exported="false"
+108-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+109            android:initOrder="100" />
+109-->[com.google.firebase:firebase-common:21.0.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/ec4138de37aaf41c537b7e74e719439c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+110
+111        <activity
+111-->[com.google.android.gms:play-services-base:18.1.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/eb80b7c20f86db896fc82173afcd18d6/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+112-->[com.google.android.gms:play-services-base:18.1.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/eb80b7c20f86db896fc82173afcd18d6/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+113            android:exported="false"
+113-->[com.google.android.gms:play-services-base:18.1.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/eb80b7c20f86db896fc82173afcd18d6/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+114-->[com.google.android.gms:play-services-base:18.1.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/eb80b7c20f86db896fc82173afcd18d6/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+115
+116        <uses-library
+116-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/73db24a2829d8fb9cf5663cfbb96cfeb/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+117            android:name="androidx.window.extensions"
+117-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/73db24a2829d8fb9cf5663cfbb96cfeb/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+118            android:required="false" />
+118-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/73db24a2829d8fb9cf5663cfbb96cfeb/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+119        <uses-library
+119-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/73db24a2829d8fb9cf5663cfbb96cfeb/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+120            android:name="androidx.window.sidecar"
+120-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/73db24a2829d8fb9cf5663cfbb96cfeb/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+121            android:required="false" />
+121-->[androidx.window:window:1.2.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/73db24a2829d8fb9cf5663cfbb96cfeb/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+122
+123        <meta-data
+123-->[com.google.android.gms:play-services-basement:18.3.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/d57a1f6c01347d085f9144e73c250e20/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+124            android:name="com.google.android.gms.version"
+124-->[com.google.android.gms:play-services-basement:18.3.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/d57a1f6c01347d085f9144e73c250e20/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+125            android:value="@integer/google_play_services_version" />
+125-->[com.google.android.gms:play-services-basement:18.3.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/d57a1f6c01347d085f9144e73c250e20/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+126
+127        <provider
+127-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/0095a4dba85ef3c38f0a9652b34cd9be/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+128            android:name="androidx.startup.InitializationProvider"
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/0095a4dba85ef3c38f0a9652b34cd9be/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+129            android:authorities="com.example.shop_easee.androidx-startup"
+129-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/0095a4dba85ef3c38f0a9652b34cd9be/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+130            android:exported="false" >
+130-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/0095a4dba85ef3c38f0a9652b34cd9be/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+131            <meta-data
+131-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/0095a4dba85ef3c38f0a9652b34cd9be/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+132                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+132-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/0095a4dba85ef3c38f0a9652b34cd9be/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+133                android:value="androidx.startup" />
+133-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/0095a4dba85ef3c38f0a9652b34cd9be/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+134            <meta-data
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+135                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+136                android:value="androidx.startup" />
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+137        </provider>
+138
+139        <receiver
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+140            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+141            android:directBootAware="false"
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+142            android:enabled="true"
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+143            android:exported="true"
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+144            android:permission="android.permission.DUMP" >
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+145            <intent-filter>
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+146                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+147            </intent-filter>
+148            <intent-filter>
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+149                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+150            </intent-filter>
+151            <intent-filter>
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+152                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+153            </intent-filter>
+154            <intent-filter>
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+155                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dipkonaroy/.gradle/caches/8.10.2/transforms/71c2a5c462ada5f663b8ca591b1907a5/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+156            </intent-filter>
+157        </receiver>
+158    </application>
+159
+160</manifest>
