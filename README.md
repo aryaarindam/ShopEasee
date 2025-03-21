@@ -1,6 +1,6 @@
-# 🛒 Shop-Easee
+# 🛒 ShopEasee
 
-Shop-Easee is a simple grocery list app built with Flutter. It helps users easily add, remove, and manage grocery items.
+ShopEasee is a simple grocery list app built with Flutter. It helps users easily add, remove, and manage grocery items.
 
 ## ✨ Features
 - ✅ Add grocery items  
