@@ -3,11 +3,10 @@
     package="com.example.shop_easee"
     minSdkVersion="21"
     targetSdkVersion="35"
-    shrinking="true"
-    mergedManifest="/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/intermediates/merged_manifest/release/processReleaseMainManifest/AndroidManifest.xml"
-    manifestMergeReport="/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/outputs/logs/manifest-merger-release-report.txt"
-    proguardFiles="/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.7.0:/Users/dipkonaroy/Downloads/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
-    partialResultsDir="/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out">
+    mergedManifest="/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/intermediates/merged_manifest/release/processReleaseMainManifest/AndroidManifest.xml"
+    manifestMergeReport="/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/outputs/logs/manifest-merger-release-report.txt"
+    proguardFiles="/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.7.0:/Users/dipkonaroy/Downloads/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
+    partialResultsDir="/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -27,11 +26,11 @@
         value="android.app.Application" />
   </manifestPlaceholders>
   <artifact
-      classOutputs="/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/intermediates/javac/release/compileReleaseJavaWithJavac/classes:/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/tmp/kotlin-classes/release:/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/kotlinToolingMetadata:/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/processReleaseResources/R.jar"
+      classOutputs="/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/intermediates/javac/release/compileReleaseJavaWithJavac/classes:/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/tmp/kotlin-classes/release:/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/kotlinToolingMetadata:/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/processReleaseResources/R.jar"
       type="MAIN"
       applicationId="com.example.shop_easee"
-      generatedSourceFolders="/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/generated/ap_generated_sources/release/out"
-      generatedResourceFolders="/Users/dipkonaroy/flutter_projects/ShopEase/shop_easee/build/app/generated/res/resValues/release"
-      desugaredMethodsFiles="/Users/dipkonaroy/.gradle/caches/8.10.2/transforms/58b2fa97deb6620e81e8f2146e68c814/transformed/D8BackportedDesugaredMethods.txt">
+      generatedSourceFolders="/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/generated/ap_generated_sources/release/out"
+      generatedResourceFolders="/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/generated/res/google-services/release:/Users/dipkonaroy/flutter_projects/Shop_easee/build/app/generated/res/resValues/release"
+      desugaredMethodsFiles="/Users/dipkonaroy/.gradle/caches/8.10.2/transforms/6acd1316a909a3b9467814415d8b5421/transformed/D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

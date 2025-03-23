@@ -32,6 +32,25 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
+    android {
+        signingConfigs {
+            create("release") {
+                storeFile = file(rootProject.file("android/app/keystore.jks"))
+                storePassword = project.findProperty("storePassword") as String?
+                keyAlias = project.findProperty("keyAlias") as String?
+                keyPassword = project.findProperty("keyPassword") as String?
+            }
+        }
+
+        buildTypes {
+            release {
+                isMinifyEnabled = false
+                isShrinkResources = false
+                signingConfig = signingConfigs.getByName("release")
+            }
+        }
+    }
+
 
     buildTypes {
         release {

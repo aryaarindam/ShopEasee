@@ -35,7 +35,12 @@ class _GroceryListState extends State<GroceryList> {
       _groceryItems.remove(item);
     });
   }
-
+/*
+ The build() method is responsible for returning the 
+  Widget tree that represents the UI of the app at a given moment.
+  It creates an Element Tree that tracks widget state
+  The build() method is called when Flutter needs to update the UI.
+*/
   @override
   Widget build(BuildContext context) {
     Widget content = FutureBuilder(
