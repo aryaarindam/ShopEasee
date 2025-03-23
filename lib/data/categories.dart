@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 import 'package:shop_easee/models/category.dart';
 
 const categories = {

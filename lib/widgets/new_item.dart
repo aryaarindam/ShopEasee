@@ -36,11 +36,34 @@ class _NewItemState extends State<NewItem> {
   Future<void> uploadDatatoDb() async {
     try {
       await FirebaseFirestore.instance.collection("Added_items").add({
-        "title": _enteredName,
-        "categories": _selectedCategory.title,
-        "quantity": _enteredQuantity,
-        "id": DateTime.now().toString(),
-      });
+  "title": _enteredName,
+  "categories": categories.entries
+    .firstWhere((entry) => entry.value == _selectedCategory)
+    .key
+    .toString()
+    .split('.')
+    .last, // Saves only "dairy", "fruit", etc.
+  // "categories": _selectedCategory
+  //     .toString()
+  //     .split('.')
+  //     .last, //Save Enum key (e.g., "dairy", "fruit")
+  "quantity": _enteredQuantity,
+  "id": DateTime.now().toString(),
+});
+
+//       await FirebaseFirestore.instance.collection("Added_items").add({
+//   "title": _enteredName,
+//   "categories": [_selectedCategory.title],  //Store as a list
+//   "quantity": _enteredQuantity,
+//   "id": DateTime.now().toString(),
+// });
+
+      // await FirebaseFirestore.instance.collection("Added_items").add({
+      //   "title": _enteredName,
+      //   "categories": _selectedCategory.title,
+      //   "quantity": _enteredQuantity,
+      //   "id": DateTime.now().toString(),
+      // });
     } catch (e) {
       print(e);
     }
